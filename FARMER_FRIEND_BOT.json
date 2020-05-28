@@ -1,13 +1,186 @@
 {
   "intents": [
     {
-      "intent": "Former_Friend",
+      "intent": "NATURAL_FARMING",
       "examples": [
         {
-          "text": "i'm former"
-        },
+          "text": "NATURAL FARMING"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "PANNEER",
+      "examples": [
         {
-          "text": "i produce rice"
+          "text": "PANNEER"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "SEEDS",
+      "examples": [
+        {
+          "text": "SEEDS"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "BUTTER",
+      "examples": [
+        {
+          "text": "BUTTER"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "COW_GHEE",
+      "examples": [
+        {
+          "text": "COW GHEE"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "POULTRY",
+      "examples": [
+        {
+          "text": "POULTRY"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "FLOWER_SEEDS",
+      "examples": [
+        {
+          "text": "FLOWER SEEDS"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "COW_MILK",
+      "examples": [
+        {
+          "text": "COW MILK"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "FODDER_SEEDS",
+      "examples": [],
+      "description": "FODDER SEEDS"
+    },
+    {
+      "intent": "BUFFALO_GHEE",
+      "examples": [
+        {
+          "text": "BUFFALO GHEE"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "BUFFALO_MILK",
+      "examples": [
+        {
+          "text": "BUFFALO MILK"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "FARMING",
+      "examples": [
+        {
+          "text": "FARMING"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "WET_LAND_FARMING",
+      "examples": [
+        {
+          "text": "WET LAND FARMING"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "GHEE",
+      "examples": [
+        {
+          "text": "GHEE"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "VEGETABLE_SEEDS",
+      "examples": [
+        {
+          "text": "VEGETABLE SEEDS"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "MILK_PRODUCTS",
+      "examples": [
+        {
+          "text": "MILK PRODUCTS"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "FISHERIES",
+      "examples": [
+        {
+          "text": "FISHERIES"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "SOIL_TESTING",
+      "examples": [
+        {
+          "text": "SOIL TESTING"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "DRY_LAND_FARMING",
+      "examples": [
+        {
+          "text": "DRY LAND FARMING"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "CHEESE",
+      "examples": [
+        {
+          "text": "CHEESE"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "CEREAL_SEEDS",
+      "examples": [
+        {
+          "text": "CEREAL SEEDS"
         }
       ],
       "description": ""
@@ -15,14 +188,101 @@
   ],
   "entities": [
     {
-      "entity": "greeting",
+      "entity": "MILK_PRODUCTS",
       "values": [
         {
           "type": "synonyms",
-          "value": "greeting",
+          "value": "MILK_PRODUCTS",
+          "synonyms": [
+            "MILK PRODUCTS",
+            "MILK",
+            "MILKY PRODUCTS"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "FISHERIES",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "FISHERIES",
+          "synonyms": [
+            "FISHERIES"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "greetings",
           "synonyms": [
             "hi",
-            "hello"
+            "hello",
+            "good morning",
+            "hey",
+            "good afternoon",
+            "good evening"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "POULTRY",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "POULTRY",
+          "synonyms": [
+            "POULTRY"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "SOIL_TESTING",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "SOIL_TESTING",
+          "synonyms": [
+            "SOIL TESTING",
+            "WHERE THE SOIL TEST CAN BE DONE",
+            "NEAR BY SOIL TEST CENTRE"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "FARMING",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "FARMING",
+          "synonyms": [
+            "FARMING",
+            "CULTIVATION"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "SEEDS",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "SEEDS",
+          "synonyms": [
+            "SEEDS"
           ]
         }
       ],
@@ -38,14 +298,490 @@
   "dialog_nodes": [
     {
       "type": "standard",
-      "title": "FARMER_FRIEND",
-      "parent": "node_5_1590603143101",
-      "conditions": "#Former_Friend",
-      "dialog_node": "node_4_1590603238441"
+      "title": "WET LAND FARMING",
+      "parent": "node_3_1590605325666",
+      "dialog_node": "node_10_1590609693940",
+      "previous_sibling": "node_1_1590609678946"
     },
     {
       "type": "standard",
-      "conditions": "",
+      "title": "DRY LAND FARMING",
+      "parent": "node_3_1590605325666",
+      "dialog_node": "node_5_1590609703350",
+      "previous_sibling": "node_10_1590609693940"
+    },
+    {
+      "type": "standard",
+      "title": "NATURAL FARMING",
+      "parent": "node_3_1590605325666",
+      "dialog_node": "node_1_1590609678946"
+    },
+    {
+      "type": "standard",
+      "title": "FLOWER SEEDS",
+      "parent": "node_3_1590605624129",
+      "dialog_node": "node_2_1590608841161",
+      "previous_sibling": "node_7_1590608826640"
+    },
+    {
+      "type": "standard",
+      "title": "VEGETABLE SEEDS",
+      "parent": "node_3_1590605624129",
+      "dialog_node": "node_7_1590608826640",
+      "previous_sibling": "node_3_1590608791994"
+    },
+    {
+      "type": "standard",
+      "title": "FODDER SEEDS",
+      "parent": "node_3_1590605624129",
+      "dialog_node": "node_6_1590608850334",
+      "previous_sibling": "node_2_1590608841161"
+    },
+    {
+      "type": "standard",
+      "title": "CEREAL SEEDS",
+      "parent": "node_3_1590605624129",
+      "dialog_node": "node_3_1590608791994"
+    },
+    {
+      "type": "standard",
+      "title": "CHEESE",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Cheese is yummy!!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1590605289184",
+      "conditions": "#CHEESE",
+      "dialog_node": "node_2_1590607734463",
+      "previous_sibling": "node_4_1590607722831"
+    },
+    {
+      "type": "standard",
+      "title": "BUTTER",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Butter is fat one."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1590605289184",
+      "conditions": "#BUTTER",
+      "dialog_node": "node_4_1590607722831",
+      "previous_sibling": "node_8_1590607687344"
+    },
+    {
+      "type": "standard",
+      "title": "GHEE",
+      "output": {
+        "generic": [
+          {
+            "title": "TYPES OF GHEE",
+            "options": [
+              {
+                "label": "COW_GHEE",
+                "value": {
+                  "input": {
+                    "text": "COW GHEE"
+                  }
+                }
+              },
+              {
+                "label": "BUFFALO_GHEE",
+                "value": {
+                  "input": {
+                    "text": "BUFFALO GHEE"
+                  }
+                }
+              }
+            ],
+            "description": "(I can assist you)",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_4_1590605289184",
+      "conditions": "#GHEE",
+      "dialog_node": "node_1_1590607755264",
+      "previous_sibling": "node_2_1590607746107"
+    },
+    {
+      "type": "standard",
+      "title": "PANNEER",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Panneer is so tasty."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1590605289184",
+      "conditions": "#PANNEER",
+      "dialog_node": "node_2_1590607746107",
+      "previous_sibling": "node_2_1590607734463"
+    },
+    {
+      "type": "standard",
+      "title": "BUFFALO_MILK",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Milk is good for health"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1590605289184",
+      "dialog_node": "node_8_1590607687344",
+      "previous_sibling": "node_8_1590607674023"
+    },
+    {
+      "type": "standard",
+      "title": "COW_MILK",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Cow milk is good for health"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1590605289184",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1590603143101"
+      },
+      "conditions": "#COW_MILK",
+      "dialog_node": "node_8_1590607674023"
+    },
+    {
+      "type": "standard",
+      "title": "SEEDS",
+      "output": {
+        "generic": [
+          {
+            "title": "Which seeds you want",
+            "options": [
+              {
+                "label": "CEREAL SEEDS",
+                "value": {
+                  "input": {
+                    "text": "COTTON SEEDS"
+                  }
+                }
+              },
+              {
+                "label": "VEGETABLE SEEDS",
+                "value": {
+                  "input": {
+                    "text": "VEGETABLE SEEDS"
+                  }
+                }
+              },
+              {
+                "label": "FLOWER SEEDS",
+                "value": {
+                  "input": {
+                    "text": "FLOWER SEEDS"
+                  }
+                }
+              },
+              {
+                "label": "FODDER SEEDS",
+                "value": {
+                  "input": {
+                    "text": "FODDER SEEDS"
+                  }
+                }
+              }
+            ],
+            "description": "(I can suggest you best one)",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1590603143101",
+      "conditions": "#SEEDS",
+      "dialog_node": "node_3_1590605624129",
+      "previous_sibling": "node_3_1590605325666"
+    },
+    {
+      "type": "standard",
+      "title": "POULTRY",
+      "parent": "node_5_1590603143101",
+      "conditions": "@POULTRY",
+      "dialog_node": "node_9_1590605649401",
+      "previous_sibling": "node_8_1590605638471"
+    },
+    {
+      "type": "standard",
+      "title": "SOIL TESTING",
+      "parent": "node_5_1590603143101",
+      "conditions": "@SOIL_TESTING",
+      "dialog_node": "node_8_1590605638471",
+      "previous_sibling": "node_3_1590605624129"
+    },
+    {
+      "type": "standard",
+      "title": "FARMING",
+      "output": {
+        "generic": [
+          {
+            "title": "FARMING METHODS",
+            "options": [
+              {
+                "label": "NATURAL FARMING",
+                "value": {
+                  "input": {
+                    "text": "Natural Farming"
+                  }
+                }
+              },
+              {
+                "label": "WET LAND FARMING",
+                "value": {
+                  "input": {
+                    "text": "General Farming"
+                  }
+                }
+              },
+              {
+                "label": "DRY LAND FARMING",
+                "value": {
+                  "input": {
+                    "text": "Dry Land Farming"
+                  }
+                }
+              }
+            ],
+            "description": "(I can Assist you)",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1590603143101",
+      "conditions": "#FARMING",
+      "dialog_node": "node_3_1590605325666",
+      "previous_sibling": "node_4_1590605289184"
+    },
+    {
+      "type": "standard",
+      "title": "FISHERIES",
+      "parent": "node_5_1590603143101",
+      "dialog_node": "node_7_1590605670902",
+      "previous_sibling": "node_9_1590605649401"
+    },
+    {
+      "type": "standard",
+      "title": "MILK PRODUCTS",
+      "output": {
+        "generic": [
+          {
+            "title": "Choose the kind of MILK_PRODUCTS",
+            "options": [
+              {
+                "label": "COW_MILK",
+                "value": {
+                  "input": {
+                    "text": "COW_MILK"
+                  }
+                }
+              },
+              {
+                "label": "BUFFALO_MILK",
+                "value": {
+                  "input": {
+                    "text": "BUFFALO_MILK"
+                  }
+                }
+              },
+              {
+                "label": "BUTTER_MILK",
+                "value": {
+                  "input": {
+                    "text": "BUTTER_MILK"
+                  }
+                }
+              },
+              {
+                "label": "CHEESE",
+                "value": {
+                  "input": {
+                    "text": "CHEESE"
+                  }
+                }
+              },
+              {
+                "label": "PANNEER",
+                "value": {
+                  "input": {
+                    "text": "PANNEER"
+                  }
+                }
+              },
+              {
+                "label": "BUFFALO_GHEE",
+                "value": {
+                  "input": {
+                    "text": "COW_GHEE"
+                  }
+                }
+              }
+            ],
+            "description": "(Where can I assist you)",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1590603143101",
+      "conditions": "#MILK_PRODUCTS",
+      "dialog_node": "node_4_1590605289184"
+    },
+    {
+      "type": "standard",
+      "title": "BUFFALO_GHEE",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Cow ghee is so yummy."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1590607755264",
+      "conditions": "#BUFFALO_GHEE",
+      "dialog_node": "node_1_1590607821457",
+      "previous_sibling": "node_1_1590607806699"
+    },
+    {
+      "type": "standard",
+      "title": "COW_GHEE",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Cow ghee is good for health."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1590607755264",
+      "conditions": "#COW_GHEE",
+      "dialog_node": "node_1_1590607806699"
+    },
+    {
+      "type": "standard",
+      "title": "FARMER_FRIEND",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Welcome to the FARMER_FRIEND_BOT"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          },
+          {
+            "title": "List of Services",
+            "options": [
+              {
+                "label": "MILK PRODUCTS",
+                "value": {
+                  "input": {
+                    "text": "Milk Products"
+                  }
+                }
+              },
+              {
+                "label": "FARMING",
+                "value": {
+                  "input": {
+                    "text": "FARMING"
+                  }
+                }
+              },
+              {
+                "label": "SEEDS",
+                "value": {
+                  "input": {
+                    "text": "SEEDS"
+                  }
+                }
+              },
+              {
+                "label": "SOIL TESTING",
+                "value": {
+                  "input": {
+                    "text": "SOIL TESTING"
+                  }
+                }
+              },
+              {
+                "label": "POULTRY",
+                "value": {
+                  "input": {
+                    "text": "POULTRY"
+                  }
+                }
+              },
+              {
+                "label": "FISHERIES",
+                "value": {
+                  "input": {
+                    "text": "FISHERIES"
+                  }
+                }
+              }
+            ],
+            "description": "(where I can assist you)",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@greetings",
       "dialog_node": "node_5_1590603143101",
       "previous_sibling": "Welcome"
     },
